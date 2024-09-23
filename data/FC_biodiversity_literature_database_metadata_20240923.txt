@@ -1,0 +1,49 @@
+### Metadata for Forest Carbon & Biodiversity literature database ###
+
+This file provides metadata for the data file "FC_biodiversity_literature_database_20240923.tsv" which is a tab-delimited text file containing all 153 papers related to biodiversity within forest carbon markets reviewed in Allen et al. ("eDNA offers opportunities for improved biodiversity monitoring within forest carbon markets"). Each row in that file represents a scientific article that substantively discusses both forest carbon and biodiversity. Below is a list of column names from that file and a description of the data that each column contains.
+
+paperid	- a unique identifier for each article
+
+incidental - article was discovered incidentally, not as part of the formal Web of Science search
+
+authors	- a semicolon-separated list of authors for each article
+
+editors	- a semicolon-separated list of editors for edited volumes (e.g., books)
+
+year - the year of publication for each article
+
+title - the title of each article
+
+journal - the name of the journal or book each article appears in
+
+city - the city of publication (only for edited volumes)
+
+publisher - the publisher (only for edited volumes)
+
+vol	- the volume number for the journal where article was published
+
+num - the issue number for the journal where each article was published
+
+pages - the page numbers for the journal where each article was published
+
+article_num - the article number (where applicable) for each article
+
+region - the region of the world in which the study took place (NA for global studies and those without a clear geographic refrerence)
+
+country_area - the country or sub-region in which the study took place (NA for global studies and those without a clear geographic refrerence)
+
+lat_approx - the approximate latitude of the study (NA for global studies and those without a clear geographic refrerence)
+
+lon_approx - the approximate longitude of the study (NA for global studies and those without a clear geographic refrerence)
+
+geo_notes - notes explaining the coordinates or geographic scope of the study
+
+trop_sub - did the study take place in tropical or sub-tropical latitudes? (1 = yes; 0 = no; NA = unable to be determined)
+
+empirical - did the study involve analysis of empirical data (1 = yes; 0 = no); articles with a 0 were generally reviews, perspectives, etc.
+
+biodiv_monitoring_focus - was biodiversity monitoring a major focus of the article (1 = yes; 0 = no)
+
+topic - the major themes of the article (effectiveness, monitoring, unintended consequences, optimal location); where articles had more than one major theme, all are listd separated by '+'
+
+summary - a brief summary provided for selected article (e.g., where not obvious from the title)

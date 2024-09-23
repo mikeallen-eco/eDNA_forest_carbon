@@ -1,0 +1,81 @@
+### Metadata for eDNA literature database ###
+
+This file provides metadata for the data file "eDNA_assessment_literature_database_20240923.tsv" which is a tab-delimited text file containing all 324 eDNA (and related techniques) reviewed in Allen et al. ("eDNA offers opportunities for improved biodiversity monitoring within forest carbon markets"). Each row in that file represents a scientific article in which eDNA (or a related approach) is used to evaluate an ecological impact or gradient. Below is a list of column names from that file and a description of the data that each column contains.
+
+paperid - a unique identifier for each eDNA
+
+authors - semicolon-separated list of authors for each paper
+
+year - year that each paper was published
+
+title - title of each paper
+
+journal	- journal that each paper was published in
+
+vol	- the volume number for the journal where article was published
+
+num - the issue number for the journal where each article was published
+
+pages - the page numbers for the journal where each article was published
+
+article_num - the article number (where applicable) for each article
+
+doi - the DOI for each article
+
+region - the region of the world in which the study took place
+
+country_area - the country or sub-region in which the study took place
+
+trop_sub - did the study take place in tropical or sub-tropical latitudes? (1 = yes; 0 = no)
+
+hab_gen - the general habitat of the study (marine, freshwater, forest, grassland, cave, other terrestrial)
+
+substrate - the primary eDNA substrate (water, sediment, vegetation, etc.)
+
+substrate2 - organismal group that served as the substrate where the substrate field was 'organism diet' or 'organism microbiome'
+
+mammals - were mammals a focus of the study? (1 = yes; 0 = no)
+
+birds - were birds a focus of the study? (1 = yes; 0 = no)
+
+reptiles - were reptiles a focus of the study? (1 = yes; 0 = no)
+
+amphibians - were amphibians a focus of the study? (1 = yes; 0 = no)
+
+fish - were fish a focus of the study? (1 = yes; 0 = no)
+
+invertebrates - were invertebrates a focus of the study? (1 = yes; 0 = no)
+
+plants - were plants a focus of the study? (1 = yes; 0 = no)
+
+fungi - were fungi a focus of the study? (1 = yes; 0 = no)
+
+protists - were protists a focus of the study? (1 = yes; 0 = no)
+
+prokaryotes - were prokaryotes a focus of the study? (1 = yes; 0 = no)
+
+impact - the impact or gradient type studied (habitat structure, pollution, etc.)
+
+method - molecular approach (DNA metabarcoding, RNA metabarcoding, qPCR, ddPCR, etc.)
+
+markers - a list of the genetic regions targeted in the study
+
+numregions - the number of genetic regions targeted in the study
+
+numsamp - the total sample size of eDNA samples
+
+numsamp_notes - notes explaining how sample size was determined (where ambiguous)
+
+summary - a summary of the basic research question
+
+lat_approx - the approximate latitude of the study
+
+lon_approx - the approximate longitude of the study
+
+geo_notes - notes explaining the choice of coordinates (where ambigous)
+
+data_share - did the paper make the underlying raw or processed data (e.g., OTU tables) openly available? (1 = yes; 0 = no)
+
+raw_data_archive - the name of the repository used for raw data (e.g., sequences) or 'N' where not made available
+
+procdata_archive - the name of the repository used for processed data (e.g., OTU tables) or 'N' where not made available

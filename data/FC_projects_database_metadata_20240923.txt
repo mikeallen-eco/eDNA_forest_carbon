@@ -1,0 +1,94 @@
+### Metadata for the Forest Carbon - Biodiversity project database ###
+
+This file provides metadata for the data file "FC_projects_database_20240923.tsv" which contains information on all 130 forest carbon projects reviewed in Allen et al. ("eDNA offers opportunities for improved biodiversity monitoring within forest carbon markets"). Each row in that data file represents a forest carbon project in which biodiversity co-benefits are verified by one of four standards programs (CCB, SDVista, Gold Standard, or PlanVivo). Below is a list of column names from the data file and a description of the data that each column contains.
+
+
+program - the identitity of the biodiversity co-benefit verification entity (CCB = Climate, Community, and Biodiversity Alliance; GS = Gold Standard Impact Registry; SDV = Sustainable Development Verified Impact Standard; PV = PlanVivo).
+
+ID - a project ID that forms a unique ID for the project when combined with the program field. For CCB, SDV, and GS, this number is provided by the organization; we generated our own unique numbers for the PlanVivo projects. 
+
+Name - the name of the project as provided by the program
+
+Proponent - the organization sponsoring the project as provided by the program
+
+Project Type - the forest carbon project type as provided by the program. Some projects are classified into more than one type and each program uses a slightly different notation. Abbreviations: A/R = Afforestation/Reforestation; REDD+ = Reduced Emissions from Deforestation and Degradation.
+
+Distinctions - any special designations attached to the project. For CCB, this is extra designations such as "Climate Gold" or "Biodiversity Gold". For the other programs, it is the Sustainable Development Goal number(s) that the project addresses.
+
+Status - the progress the project had acheived within the "validation and verificatiion" pipeline when reviewed. The terminology used is that belonging to each program.
+
+region - the region of the world in which the study took place: North America (Canada & US), Central America (Mexico - Panama), South America, Europe, Asia, Africa, Oceania (Australia, New Zealand, and Pacific islands)
+
+country_area - the country or sub-region in which the study took place
+
+trop_subtrop - did the study take place in tropical or sub-tropical latitudes? (1 = yes; 0 = no)
+
+yearMR - the year of the latest monitoring report available
+
+mammals - were mammals a focus of biodiversity monitoring? (1 = yes; 0 = no). For this and simlar fields, 'focus of biodiversity monitoring' is defined as reporting some form of on-the-ground monitoring results for that taxa within project documentation.
+
+birds - were birds a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+reptiles - were reptiles a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+amphibians - were amphibians a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+fish - were fish a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+invertebrates - were invertebrates a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+plants - were plants a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+fungi - were fungi a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+protists - were protists a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+prokaryotes - were prokaryotes a focus of biodiversity monitoring? (1 = yes; 0 = no)
+
+camtrap	- were camera traps used to monitor biodiversity? (1 = yes; 0 = no)
+
+accous - were bioacoustic methods used to monitor biodiversity? (1 = yes; 0 = no)
+
+traps - were conventional trapping methods (e.g., Sherman traps, mist nets, etc.) used to monitor biodiversity? (1 = yes; 0 = no)	
+
+DNA - were DNA-based methods used to monitor biodiversity? (1 = yes; 0 = no)
+
+formal_obs - were formal visual/auditory observation methods (e.g., plot or transect surveys) used to monitor biodiversity? (1 = yes; 0 = no)
+
+incidental_obs - were informal visual/auditory survey methods (e.g., incidental sightings, unstandardized community reports) used to monitor biodiversity? (1 = yes; 0 = no)
+
+camtrap_n - sample size for camera trap monitoring (number of sampling locations or 'NA' where the method was used but no sample size was provided)
+
+accous_n - sample size for bioaccoustic monitoring (number of sampling locations or 'NA' where the method was used but no sample size was provided)
+
+traps_n	DNA_n - sample size for conventional trapping methods (number of sampling locations or 'NA' where the method was used but no sample size was provided)
+
+formal_obs_n - sample size for formal visual/auditory observation methods (number of sampling locations or 'NA' where the method was used but no sample size was provided)
+
+incidental_obs_n - sample size for informal visual/auditory survey methods (number of sampling locations or 'NA' where the method was used but no sample size was provided)
+
+animal_mon - categorical variable describing the general status of animal biodiversity monitoring performed. 'yes, incidental' = animal monitoring was performed, but only using incidental / informal methods; 'yes, sample based' = animal monitoring was performed using some form of sample-based observation method (e.g., camera traps, transect surveys, etc.); 'none' = no animal monitoring was performed.
+
+sample_based_n_provided - if sample-based animal monitoring occured, was the sample size reported? ('Y' = yes; 'N' = no; NA for cases where animal_mon does not equal 'yes, sample based')
+
+raw_data_avail	- were the underlying raw data for the monitoring made available (i.e., sample level abundance or presence information for each taxa)? ('Y' = yes; 'N' = no)
+
+mon_results_in_unavail.report - was a separate biodiversity monitoring report referenced within the available project documents that was not publicly available online? ('Y' = yes; 'N' = no)
+
+taxa_notes - notes related to the taxa monitored for the project (i.e., the fields 'mammals' through 'prokaryotes')
+
+methods_notes - notes related to the biodiversity survey methods used for the project (i.e., the fields 'camtrap' through 'sample_based_n_provided')
+
+data_notes - notes related to the biodiversity survey data (i.e., fields 'raw_data_avail' and 'mon_results_in_unavail.report')
+
+lat_approx - the approximate latitude of the study
+
+lon_approx - the approximate longitude of the study
+
+kml - was a kml (spatial data) file of the project area made publicly available?
+
+area_ha - the area of the forest carbon project in hectares. This represents the area of actual project activities (e.g., planting in Afforestation projects), not the broader 'project zone'. These values were obtained from the project documentation and have varying degrees of precision (see 'notes' column)
+
+ann_emiss_red - the annual tons of carbon dioxide equivalents (TCO2e) avoided by the project as obtained directly from the project documentation or estimated based on total emissions reduction estimates (see 'notes' column)
+
+notes - further explanation related to the geographic coordinates, or to the fields 'area_ha' and 'ann_emiss_red' where needed
