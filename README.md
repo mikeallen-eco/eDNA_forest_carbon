@@ -1,5 +1,7 @@
 # Code and data for: eDNA offers opportunities for improved biodiversity monitoring within forest carbon markets
 
+[![DOI](https://zenodo.org/badge/861968774.svg)](https://zenodo.org/doi/10.5281/zenodo.13830751)
+
 The purpose of this repository is to provide code and data for the manuscript: "eDNA offers opportunities for improved biodiversity monitoring within forest carbon markets" (Allen et al. 2024).
 
 The repository consists of 4 data files and 1 R script that allow the user to reproduce the analyses and figures included in the paper. The data files are stored in the /data folder along with corresponding metadata text files describing the data set and the data contained in each column. The script file, summarize_eDNA_forest_carbon_lit.R, is subdivided into 12 sections (described in the Table of Contents within) and is set up such that all sections can run independently after Section 1 is run to load the packages and data. The 4 databases are formatted as tab-separated text files (.tsv files) and are described further below. 
